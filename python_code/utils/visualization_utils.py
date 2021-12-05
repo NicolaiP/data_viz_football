@@ -58,7 +58,7 @@ def plot_or_save(save_fig=False, save_path='/', save_name='average'):
 
     if save_fig:
         make_folder(save_path)
-        fname = save_name + '.pdf'
+        fname = save_name + '.png'
         # plt.tight_layout()
         # plt.tight_layout(h_pad=0.1)
         plt.savefig(os.path.normpath(os.path.join(save_path, fname)), bbox_inches='tight')
